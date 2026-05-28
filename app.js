@@ -87,7 +87,7 @@ logoutBtn.addEventListener("click", () => {
 
 const markdown = `
 
-# Welcome & Terms of Use
+<h2 id="terms">Welcome & Terms of Use</h2>
 
 Welcome to our private community platform. This website is intended exclusively for approved members with authorized access credentials.
 
@@ -97,7 +97,7 @@ Unauthorized access, sharing of credentials, copying of content, or misuse of th
 
 ---
 
-# SpaceX IPO Could Become the Biggest Market Event of the Decade
+<h2 id="spacex-ipo">SpaceX IPO Could Become the Biggest Market Event of the Decade</h2>
 
 <div class="article-image">
 
@@ -130,7 +130,7 @@ The upcoming SpaceX IPO on June 12 could generate more than $125 billion in mark
 
 ---
 
-## About SpaceX
+<h2 id="about-spacex">About SpaceX</h2>
 
 <div class="article-image">
 
@@ -154,7 +154,7 @@ src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1400&au
 
 ---
 
-## Interesting Numbers
+<h2 id="interesting-numbers">Interesting Numbers</h2>
 
 - Estimated private valuation before IPO: $250–300 billion
 
@@ -168,7 +168,7 @@ src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1400&au
 
 ---
 
-## Our Position
+<h2 id="our-position">Our Position</h2>
 
 <div class="article-image">
 
@@ -182,7 +182,7 @@ Market demand will significantly exceed available public supply during the first
 
 ---
 
-## Estimated Price Growth
+<h2 id="estimated-growth">Estimated Price Growth</h2>
 
 Internal projection: SpaceX becomes one of the most explosive IPO launches ever seen on public markets.
 
@@ -198,7 +198,7 @@ Internal projection: SpaceX becomes one of the most explosive IPO launches ever 
 
 ---
 
-## Why?
+<h2 id="why">Why?</h2>
 
 ### Historic Investor Demand
 
@@ -218,7 +218,7 @@ Companies associated with Elon Musk historically generate extreme market momentu
 
 ---
 
-## AI, Defense & Infrastructure Exposure
+<h2 id="ai-defense">AI, Defense & Infrastructure Exposure</h2>
 
 <div class="article-image">
 
@@ -242,7 +242,7 @@ SpaceX is positioned at the intersection of:
 
 ---
 
-## Key Numbers
+<h2 id="key-numbers">Key Numbers</h2>
 
 - Potential first-week trading volume: record-breaking levels
 
@@ -254,7 +254,7 @@ SpaceX is positioned at the intersection of:
 
 ---
 
-## Who Will Have Access to SpaceX Shares?
+<h2 id="shares">Who Will Have Access to SpaceX Shares?</h2>
 
 Initial access to SpaceX IPO shares could be heavily concentrated among major institutional investors and selected brokerage networks.
 
@@ -292,7 +292,7 @@ Retail access available through:
 
 ---
 
-## Estimated Supply vs Demand
+<h2 id="supply-demand">Estimated Supply vs Demand</h2>
 
 - Potential IPO valuation: $250–300 billion
 
@@ -306,14 +306,10 @@ Such conditions historically create extreme volatility and aggressive upward pri
 
 `;
 
-/* RENDER */
-
 function renderMarkdown() {
 
     blogMarkdown.innerHTML =
         marked.parse(markdown);
 }
-
-/* INIT */
 
 checkAuth();
