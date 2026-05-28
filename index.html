@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prime Info Community</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+
+    <main id="loginView" class="login-view">
+
+        <section class="login-card">
+
+            <div class="brand-badge">
+                PRIME INFO COMMUNITY
+            </div>
+
+            <h1>
+                Institutional Market Intelligence
+            </h1>
+
+            <p class="subtitle">
+                Exclusive access to private market analysis,
+                strategic forecasts, institutional research
+                and investment intelligence.
+            </p>
+
+            <form id="loginForm" class="login-form">
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Access Password
+                    </label>
+
+                    <input type="password" id="password" placeholder="Enter password" required />
+
+                </div>
+
+                <button type="submit">
+                    Continue
+                </button>
+
+                <p id="errorMessage" class="error-message">
+                    Invalid password.
+                </p>
+
+            </form>
+
+            <div class="login-footer">
+                Authorized members only.
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- BLOG -->
+
+    <main id="blogView" class="blog-view hidden">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="topbar-inner">
+
+                <div class="logo">
+                    PRIME INFO COMMUNITY
+                </div>
+
+                <button id="logoutBtn" class="logout-btn">
+                    Logout
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-inner">
+
+                <div class="hero-label">
+                    PRIVATE REPORT
+                </div>
+
+                <h1>
+                    SpaceX IPO Could Become
+                    The Biggest Market Event
+                    Of The Decade
+                </h1>
+
+                <p>
+                    Institutional analysis, financial forecasts,
+                    market demand projections and strategic insights
+                    regarding the potential SpaceX public offering.
+                </p>
+
+            </div>
+
+            <!-- HERO IMAGE -->
+
+            <div class="hero-image">
+
+                <img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?q=80&w=1600&auto=format&fit=crop"
+                    alt="Rocket launch" />
+
+            </div>
+
+        </section>
+
+        <!-- CONTENT -->
+
+        <section class="content-wrapper">
+
+            <article class="blog-content">
+
+                <div class="article-meta">
+
+                    <span>Private Analysis</span>
+                    <span>Institutional Report</span>
+                    <span>Updated Today</span>
+
+                </div>
+
+                <div id="blogMarkdown"></div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
