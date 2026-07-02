@@ -1,6 +1,8 @@
 const PASSWORD =
     '>YlI6jO/SjxEE%k3d34^p25uZ4aHIR<\\Pqnwk"7sWbg#a/L.\'m';
 
+const PASSWORD2 = '058adac57414bdf4862a33f3a2da0e2b32c96400c2746fbfecab050383d840a25d';
+
 const STORAGE_KEY = "prime_access";
 
 const loginView =
